@@ -21,6 +21,7 @@ svg {
 
 :root {
   --green-dark: #045404;
+  --gap: 15px;
 }
 
 @font-face {
@@ -46,10 +47,6 @@ body {
   list-style: none;
 }
 
-.flex {
-  display: flex;
-}
-
 .container {
   max-width: 1200px;
   width: 100%;
@@ -58,13 +55,16 @@ body {
 }
 
 .section-offset {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .section-title {
   margin: 0;
   font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 15px;
+  padding-left: 45px;
 }
 
 .visually-hidden {
@@ -102,15 +102,75 @@ body {
 
 .nav__list {
   display: flex;
-  gap: 45px;
+  gap: var(--gap);
 }
 
 .nav__link {
   color: var(--green-dark);
 }
 
+/* about-me */
+.about-me__container {
+  display: flex;
+  padding: 45px;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.about-me__description {
+  max-width: 500px;
+  width: 100%;
+  min-height: 300px;
+}
+
+.about-me__text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.about-me__foto {
+  max-width: 500px;
+  width: 100%;
+  min-height: 350px;
+  background-color: white;
+  background-image: url(../img/foto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  --offsets: 2;
+  gap: var(--gap);
+}
+
+.works__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+
+
+
+
+
 /* Кнопки */
-.btn-reset {
+/* .btn-reset {
   margin: 0;
   padding: 0;
   border: none;
@@ -127,4 +187,4 @@ body {
   position: relative;
   outline: none;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
+} */
