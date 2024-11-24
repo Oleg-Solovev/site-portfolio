@@ -10,63 +10,80 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__nav-container">
-        <nav class="nav header__nav">
-          <ul class="list-reset nav__list">
-            <li class="nav__item">
-              <a href="#about-me" class="link nav__link">
-                Обо&nbsp;мне
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#works" class="link nav__link">
-                Мои&nbsp;работы
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#certificates" class="link nav__link">
-                Мои&nbsp;сертификаты
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contacts" class="link nav__link">
-                Мои&nbsp;контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <header class="header section-offset">
+    <div class="header__container container">
+      <nav class="nav header__nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#about-me" class="link nav__link">
+              Обо&nbsp;мне
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#works" class="link nav__link">
+              Мои&nbsp;работы
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#certificates" class="link nav__link">
+              Мои&nbsp;сертификаты
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="link nav__link">
+              Мои&nbsp;контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main class="main">
+
     <section class="about-me section-offset" id="about-me">
       <h1 class="visually-hidden">Олег Соловьёв - frontend-разработчик сайт портфолио</h1>
-      <div class="container">
-        <h2 class="section-title about-me__title">Обо мне</h2>
-        <div class="about-me__container">
-          <div class="about-me__description">
-            <p class="about-me__text">Привет! Я Олег - начинающий Fullstack-разработчик. Закончил курсы по вёрстке и
-              Java Script в онлайн школе Skillbox.
-              Сейчас я изучаю курс по Type Script, продолжая осваивать профессию Fullstack-разработчик на Python.</p>
-          </div>
-          <div class="about-me__foto"></div>
+      <h2 class="section-title about-me__title">Обо мне</h2>
+      <div class="container about-me__container">
+        <div class="about-me__description">
+          <p class="about-me__text">Привет! Я - Олег, начинающий Fullstack-разработчик. Закончил курсы по вёрстке и
+            Java Script в онлайн школе Skillbox.
+            Сейчас я изучаю курс по Type Script, продолжая осваивать профессию Fullstack-разработчик на Python.</p>
         </div>
+        <div class="about-me__foto"></div>
       </div>
     </section>
-    <section class="about-me section-offset" id="works">
-      <div class="container">
-        <h2 class="section-title about-me__title">Мои работы</h2>
-       <ul class="list-reset works__items">
-        <li class="works__item">
-          <img>
-        </li>
-        <li></li>
-        <li></li>
-        <li></li>
-       </ul>
+
+    <section class="works section-offset" id="works">
+      <h2 class="section-title works__title">Мои работы</h2>
+      <div class="container works__container">
+        <ul class="list-reset works__items">
+
+          <li class="works__item">
+            <div class="works__image-wrap">
+              <img class="works__image" src="img/Maket_Lagoona_1921.png" alt="миниатюра сайта">
+            </div>
+            <div class="works__description-wrap">
+              <h3 class="works__item-title">Сайт туристической компании</h3>
+              <p class="works__description"></p>
+              <button class="btn works__item-btn">Перейти на сайт</button>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="works__image-wrap">
+              <img class="works__image" src="img/Maket_Lagoona_1921.png" alt="миниатюра сайта">
+            </div>
+            <div class="works__description-wrap">
+              <h3 class="works__item-title">Сайт туристической компании</h3>
+              <p class="works__description"></p>
+              <button class="btn works__item-btn">Перейти на сайт</button>
+            </div>
+          </li>
+
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </section>
 
