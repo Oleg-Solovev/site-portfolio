@@ -30,7 +30,7 @@ svg {
   --purpure-light: #e595c0;
   --purpure: #c25991;
   --purpure-dark: #8f225c;
-  --gap: 15px;
+  --gap: 20px;
 }
 
 @font-face {
@@ -58,7 +58,7 @@ body {
 
 .container {
   min-height: 70px;
-  padding: 15px 45px;
+  padding: 30px;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -127,8 +127,63 @@ body {
   justify-content: space-between;
   gap: var(--gap);
   align-items: center;
-  flex-wrap: wrap;
 }
+
+.header__title {
+  display: none;
+  margin: 0;
+  text-align: center;
+  color: var(--green-dark);
+  font-size: 22px;
+}
+
+/* Бургер меню */
+.header__burger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  transform: translateY(-5px);
+}
+
+.header__burger-btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--green-dark);
+  left: 5px;
+  transition: transform .5s ease-in-out,
+    opacity .5s ease-in-out,
+    background-color .5s ease-in-out;
+}
+
+.header__burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header.open .header__burger-btn span {
+  background-color: white;
+}
+
+.header.open .header__burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
 
 .header__nav {
   margin-right: auto;
@@ -141,14 +196,39 @@ body {
   justify-content: space-between;
 }
 
+/* Underline From Center */
 .hvr-underline-from-center {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: var(--green-dark);
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
 }
 
 .nav__link {
@@ -156,13 +236,13 @@ body {
 }
 
 .link {
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   border: 0;
 }
 
-.link:hover {
+/* .link:hover {
   border-bottom: 2px solid var(--green-dark);
-}
+} */
 
 .link:focus-visible {
   color: var(--green);
@@ -183,12 +263,11 @@ body {
 .about-me__description {
   max-width: 500px;
   width: 100%;
-  min-height: 300px;
+  min-height: 130px;
 }
 
 .about-me__text {
   margin: 0;
-  margin-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -220,7 +299,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
-  margin-bottom: 15px;
   padding: 15px;
   background-color: var(--green);
   border-radius: 15px;
@@ -247,4 +325,69 @@ body {
   background-color: var(--green-light);
   overflow-y: scroll;
   scrollbar-color: var(--green-dark);
+}
+
+
+
+
+/* адаптация для mobile */
+@media (max-width: 530px) {
+
+  .section-offset {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .header__title {
+    display: block;
+  }
+
+  .header__container {
+    flex-wrap: nowrap;
+  }
+
+  .header__burger-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    background-color: var(--green);
+    padding: 75px 20px 20px 20px;
+    transition: transform .5s;
+    z-index: 10;
+  }
+
+  .nav__list {
+    display: block;
+  }
+
+  .nav__link {
+    color: white;
+    font-size: 21px;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .header.open .header__nav {
+    transform: translateX(100%);
+  }
+
+  .works__items {
+    --offsets: 0;
+  }
+
 }
