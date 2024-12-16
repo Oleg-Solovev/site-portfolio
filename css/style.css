@@ -30,17 +30,8 @@ svg {
   --purpure-light: #e595c0;
   --purpure: #c25991;
   --purpure-dark: #8f225c;
+  --gap-row: 30px;
   --gap: 20px;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: local('Muller-Regular'),
-    url('../fonts/MullerRegular.woff2') format("woff2"),
-    url('../fonts/MullerRegular.woff') format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 
 body {
@@ -240,10 +231,6 @@ body {
   border: 0;
 }
 
-/* .link:hover {
-  border-bottom: 2px solid var(--green-dark);
-} */
-
 .link:focus-visible {
   color: var(--green);
 }
@@ -271,6 +258,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
+  text-indent: 2em;
 }
 
 .about-me__foto {
@@ -291,7 +279,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   --offsets: 1;
-  gap: var(--gap);
+  row-gap: var(--gap-row);
+  column-gap: var(--gap);
 }
 
 .works__item {
@@ -299,7 +288,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
-  padding: 15px;
+  padding: 20px;
   background-color: var(--green);
   border-radius: 15px;
   position: relative;
@@ -315,6 +304,11 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-top: 10px;
+}
+
+.works__description {
+  text-indent: 2em;
 }
 
 .works__image-wrap {
@@ -323,8 +317,79 @@ body {
   min-height: 100px;
   margin-bottom: 10px;
   background-color: var(--green-light);
-  overflow-y: scroll;
+  overflow-y: auto;
   scrollbar-color: var(--green-dark);
+}
+
+/* gallery */
+
+.gallery {
+  max-width: 100%;
+  min-height: 250px;
+  position: relative;
+}
+
+.gallery-swiper {
+  padding: 0 23px;
+}
+
+.gallery__btn-prev {
+  left: -5px;
+}
+
+.gallery__btn-next {
+  right: -5px;
+}
+
+.gallery__link {
+  display: block;
+  border-radius: 7px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gallery__btn svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  fill: var(--green-dark);
+  transition: fill .3s ease-in-out;
+}
+
+.gallery__btn:focus-visible {
+  outline: 2px dashed var(--green);
+}
+
+.gallery__btn:hover svg {
+  fill: var(--green);
+}
+
+.gallery__btn:active svg {
+  fill: var(--purpure-light);
+}
+
+.swiper-button-disabled {
+  opacity: .4;
+  cursor: default;
 }
 
 

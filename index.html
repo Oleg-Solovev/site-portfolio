@@ -5,10 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Библиотека для просмотра изображений галереи -->
+  <!-- <script defer src="js/fslightbox.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="js/main.js"></script>
-  <link type="image/x-icon" href="img/favicon.png" rel="icon">
+
+
+  <!-- <link type="image/x-icon" href="img/favicon.png" rel="icon"> -->
   <title>Олег Соловьёв - Fullstack-разработчик</title>
 </head>
 
@@ -54,9 +61,16 @@
       <h2 class="section-title about-me__title">Обо мне</h2>
       <div class="container about-me__container">
         <div class="about-me__description">
-          <p class="about-me__text">Привет! Я - Олег, начинающий Fullstack-разработчик. Закончил курсы по вёрстке и
-            Java Script в онлайн школе Skillbox.
-            Сейчас я изучаю курс по Type Script, продолжая осваивать профессию Fullstack-разработчик на Python.</p>
+          <p class="about-me__text">Привет, меня зовут Олег! Я Fullstack-разработчик на Python. Закончил курсы по
+            вёрстке и
+            Java Script в онлайн-школе Skillbox.
+            Сейчас я изучаю курс по Type Script, а в ближайших планах освоить курс по фреймворку Vue.js.
+          </p>
+          <p class="about-me__text">В своих работах я использую адаптивную вёрстку, семантические теги, простые и
+            удобные в использовании элементы.</p>
+          <p class="about-me__text">
+            Мои интересы: читаю статьи на Хабре, смотрю видео про новые технологии во фронтенде, на досуге играю с
+            друзьями в настольные игры и люблю активный отдых на природе.</p>
         </div>
         <div class="about-me__foto"></div>
       </div>
@@ -73,7 +87,11 @@
             </div>
             <div class="works__description-wrap">
               <h3 class="works__item-title">Сайт туристической компании</h3>
-              <p class="works__description"></p>
+              <p class="works__description">Это мой первый сайт по вёрстке. Я использовал адаптивную вёрстку карточек с
+                помощью свойства flex. Для интуитивно понятного восприятия кнопок и ссылок применил псевдоэлементы
+                focus, hover, active. Изображения в карточках сделал фоном с помощью отдельных селекторов в CSS. В
+                разметке сайта использовал семантические теги. После изучения анимации подключил сторонюю библиотеку для
+                демонстрации движения заголовка. Позже реализовал бургерное меню для экранов мобильных устройств.</p>
               <a class="works__btn-link" target="_blank" href="https://oleg-solovev.github.io/Laguna/">
                 <button class="btn works__item-btn">Перейти на сайт</button></a>
             </div>
@@ -127,10 +145,56 @@
 
     </section>
 
+    <section class="certificates section-offset" id="certificates">
+      <div class="container certificates__container">
+        <h2 class="section-title works__title">Мои сертификаты</h2>
+
+        <div class="gallery">
+
+          <!-- Свайпер -->
+          <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="img/sertificat-1.png" data-fslightbox="gallery" class="gallery__link"
+                  aria-label="Посмотреть подробнее">
+                  <img src="img/sertificat-1.png" loading="lazy" alt="Сертификат по вёрстке" class="gallery__image"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/sertificat-2.png" data-fslightbox="gallery" class="gallery__link"
+                  aria-label="Посмотреть подробнее">
+                  <img src="img/sertificat-2.png" loading="lazy" alt="Сертификат по JS" class="gallery__image"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/sertificat-3.png" data-fslightbox="gallery" class="gallery__link"
+                  aria-label="Посмотреть подробнее">
+                  <img src="img/sertificat-3.png" loading="lazy" alt="Сертификат по HTML" class="gallery__image"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Навигация -->
+          <button class="btn-reset gallery__btn gallery__btn-prev" aria-label="Сдвинуть влево">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 11L0.999995 6L6 0.999998" />
+            </svg>
+          </button>
+          <button class="btn-reset gallery__btn gallery__btn-next" aria-label="Сдвинуть вправо">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 11L6.00001 6L1 0.999997" />
+            </svg>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+
   </main>
   <footer class="footer">
 
   </footer>
+
 </body>
 
 </html>
