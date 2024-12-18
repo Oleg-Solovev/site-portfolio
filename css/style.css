@@ -118,6 +118,8 @@ body {
   justify-content: space-between;
   gap: var(--gap);
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__title {
@@ -126,6 +128,10 @@ body {
   text-align: center;
   color: var(--green-dark);
   font-size: 22px;
+}
+
+.header__logo-link {
+  margin-right: auto;
 }
 
 /* Бургер меню */
@@ -392,11 +398,56 @@ body {
   cursor: default;
 }
 
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--green);
+}
 
+.footer__container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  gap: var(--gap);
+  background-color: transparent;
+}
 
+.social-link svg path,
+.social-link svg {
+  stroke: var(--green-dark);
+  transition: stroke .3s ease-in-out;
+}
+
+.social-link-VK svg {
+  fill: var(--green-dark);
+  transition: fill .3s ease-in-out;
+}
+
+.social-link:focus-visible {
+  outline: 2px dashed var(--green-dark);
+}
+
+.social-link:hover svg path,
+.social-link:hover svg {
+  stroke: var(--green-light);
+}
+
+.social-link-VK:hover svg {
+  fill: var(--green-light);
+}
+
+.social-link:active svg path,
+.social-link:active svg {
+  stroke: var(--purpure);
+}
+
+.social-link-VK:active svg {
+  fill: var(--purpure);
+}
 
 /* адаптация для mobile */
-@media (max-width: 530px) {
+@media (max-width: 640px) {
 
   .section-offset {
     padding: 0;
@@ -453,6 +504,11 @@ body {
 
   .works__items {
     --offsets: 0;
+  }
+
+  .social-link {
+    width: 30px;
+    height: 30px;
   }
 
 }
