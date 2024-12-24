@@ -1,10 +1,14 @@
+// События кликов для бургер меню
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("burger").addEventListener("click", function () {
         document.querySelector("header").classList.toggle("open")
     })
-    // document.querySelectorAll("nav__link").addEventListener("click", function() {
-    //     document.querySelector("header").classList.toggle("open")
-    // })
+    let el = document.querySelectorAll('.nav__link');
+    for (let i = 0; i < el.length; i++) {
+        el[i].addEventListener("click", function () {
+            document.querySelector("header").classList.toggle("open")
+        })
+    }
 })
 
 // Галерея
