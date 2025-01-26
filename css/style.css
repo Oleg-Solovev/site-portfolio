@@ -180,6 +180,7 @@ body {
 .header.open .header__burger-btn span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
 }
+
 /* Бургер меню */
 
 .header__nav {
@@ -459,6 +460,7 @@ body {
 
   .section-title {
     text-align: center;
+    padding-left: 0;
   }
 
   .container {
@@ -506,11 +508,13 @@ body {
   .header.open .header__nav {
     transform: translateX(100%);
   }
-  /* Бургер меню */
-
 
   .works__items {
     --offsets: 0;
+  }
+
+  .works__item-title {
+    text-align: center;
   }
 
   .social-link {
