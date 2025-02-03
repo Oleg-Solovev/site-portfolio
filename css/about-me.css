@@ -1,0 +1,45 @@
+/* about-me */
+
+.about-me__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-me__description {
+    max-width: 500px;
+    width: 100%;
+    min-height: 130px;
+}
+
+.about-me__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-indent: 2em;
+}
+
+.about-me__foto {
+    max-width: 500px;
+    width: 100%;
+    min-height: 350px;
+    background-color: white;
+    background-image: url(../img/foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+@media (max-width: 840px) {
+
+    .about-me__wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-me__description {
+        max-width: 700px;
+    }
+}

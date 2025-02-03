@@ -22,7 +22,6 @@
 <body>
   <header class="header section-offset">
     <div class="header__container container">
-
       <button class="header__burger-btn" id="burger">
         <span></span><span></span><span></span>
       </button>
@@ -61,121 +60,129 @@
 
   <main class="main">
 
-    <section class="about-me section-offset" id="about-me">
-      <h2 class="section-title about-me__title">Обо мне</h2>
-      <div class="container about-me__container">
-        <div class="about-me__description">
-          <p class="about-me__text">Привет, меня зовут Олег! Я&nbsp;frontend-разработчик сайтов и web-интерфейсов.
-            Закончил курсы по&nbsp;вёрстке и&nbsp;Java Script в&nbsp;онлайн-школе Skillbox. Сейчас я&nbsp;изучаю курс
-            по&nbsp;Type Script,
-            а&nbsp;в&nbsp;ближайших планах освоить фреймворк Vue.js. Для меня очень важен профессиональный
-            рост и
-            развитие.
-          </p>
-          <p class="about-me__text">В&nbsp;своих работах я&nbsp;использую адаптивную вёрстку, семантические теги,
-            простые и
-            удобные в&nbsp;использовании элементы.</p>
-          <p class="about-me__text">
-            Мне интересно читать статьи на&nbsp;Хабре и смотреть видео о&nbsp;новых технологиях
-            во&nbsp;frontend-разработке.</p>
+    <section class="section-offset about-me" id="about-me">
+      <div class="container">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about-me__wrap">
+          <div class="about-me__description">
+            <p class="about-me__text">Привет, меня зовут Олег! Я&nbsp;frontend-разработчик сайтов и web-интерфейсов.
+              Закончил курсы по&nbsp;вёрстке и&nbsp;Java Script в&nbsp;онлайн-школе Skillbox. Сейчас я&nbsp;изучаю курс
+              по&nbsp;Type Script,
+              а&nbsp;в&nbsp;ближайших планах освоить фреймворк Vue.js. Для меня очень важен профессиональный
+              рост и
+              развитие.
+            </p>
+            <p class="about-me__text">В&nbsp;своих работах я&nbsp;использую адаптивную вёрстку, семантические теги,
+              простые и
+              удобные в&nbsp;использовании элементы.</p>
             <p class="about-me__text">
-            На&nbsp;досуге я хожу в&nbsp;бассейн, катаюсь на&nbsp;коньках, играю с&nbsp;друзьями в&nbsp;настольные игры и&nbsp;активно отдыхаю на&nbsp;природе.</p>
+              Мне интересно читать статьи на&nbsp;Хабре и смотреть видео о&nbsp;новых технологиях
+              во&nbsp;frontend-разработке.</p>
+            <p class="about-me__text">
+              На&nbsp;досуге я хожу в&nbsp;бассейн, катаюсь на&nbsp;коньках, играю с&nbsp;друзьями в&nbsp;настольные
+              игры
+              и&nbsp;активно отдыхаю на&nbsp;природе.</p>
+          </div>
+          <div class="about-me__foto"></div>
         </div>
-        <div class="about-me__foto"></div>
       </div>
     </section>
 
-    <section class="works section-offset" id="works">
-      <h2 class="section-title works__title">Мои работы</h2>
-      <div class="container works__container">
+    <section class="section-offset" id="works">
+      <div class="container">
+        <h2 class="section-title">Мои работы</h2>
+        <ul class="list-reset works-list">
 
-        <ul class="list-reset works__items">
-          <li class="works__item">
-            <div class="works__image-wrap">
-              <img class="works__image" src="img/Maket_Lagoona_1921.png" alt="миниатюра сайта">
-            </div>
-            <div class="works__description-wrap">
-              <h3 class="works__item-title">Сайт туристической компании</h3>
-              <p class="works__description">Это мой первый сайт по&nbsp;вёрстке. Я&nbsp;использовал адаптивную вёрстку
-                карточек с
-                помощью свойства flex. Для интуитивно понятного восприятия кнопок и&nbsp;ссылок применил псевдоэлементы
-                focus, hover, active. Изображения в&nbsp;карточках сделал фоном с&nbsp;помощью отдельных селекторов
-                в&nbsp;CSS. В
-                разметке сайта использовал семантические теги. После изучения анимации подключил сторонюю библиотеку для
-                демонстрации движения заголовка. Позже реализовал бургерное меню для экранов мобильных устройств.</p>
-              <a class="works__btn-link" target="_blank" href="https://oleg-solovev.github.io/Laguna/">
-                <button class="btn works__item-btn">Перейти на сайт</button></a>
-            </div>
-          </li>
-          <li class="works__item">
-            <div class="works__image-wrap">
-              <img class="works__image" src="img/Blanchard.png" alt="миниатюра сайта">
-            </div>
-            <div class="works__description-wrap">
-              <h3 class="works__item-title">Сайт художественной галереи Blanchard</h3>
-              <p class="works__description">По завершении курса веб-вёрстки я сделал дипломную работу. Здесь
-                я&nbsp;применил
-                технологию flex-box для удобного расположения элементов на&nbsp;веб-странице, также использовал
-                медиа-запросы
-                для&nbsp;адаптации сайта под различные экраны устройств. В&nbsp;разделе "Галерея" кастомизировал
-                чек-боксы для&nbsp; фильтрации работ и&nbsp;настроил несколько источников для&nbsp;оптимизации загрузки
-                изображения в&nbsp;необходимом
-                фильтрации картин по&nbsp;жанрам.</p>
-              <a class="works__btn-link" target="_blank" href="https://oleg-solovev.github.io/Blanchard/">
-                <button class="btn works__item-btn">Перейти на сайт</button></a>
-            </div>
-          </li>
-          <li class="works__item">
-            <div class="works__image-wrap">
-              <img class="works__image" src="img/igra-v-pari.png" alt="миниатюра сайта">
-            </div>
-            <div class="works__description-wrap">
-              <h3 class="works__item-title">Игра "найди парные карты"</h3>
-              <p class="works__description">На&nbsp;этом сайте контент формируется интерактивно с&nbsp;помощью функций
-                в&nbsp;JS файле.
-                В&nbsp;начале игры необходимо выбрать от&nbsp;1&nbsp;до&nbsp;10&nbsp;пар карточек. Открытие карточки
-                происходит по&nbsp;клику: добавляется класс &laquo;open&raquo; в&nbsp;котором указан размер шрифта
-                и&nbsp;красный фон.
-                При совпадении значений двух открытых карт к&nbsp;ним добавляется ещё один класс &laquo;success&raquo;
-                с&nbsp;зелёным фоном.
-                А&nbsp;если значения не&nbsp;совпадают, класс &laquo;open&raquo; удаляется.
-                Игра заканчивается если все карточки открыты или прошла 1&nbsp;минута на&nbsp;таймере обратного отсчёта.
-              </p>
-              <a class="works__btn-link" target="_blank" href="https://oleg-solovev.github.io/A-game-of-paired-cards/">
-                <button class="btn works__item-btn">Перейти на сайт</button></a>
+          <li class="works-list__item">
+            <div class="works">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/Maket_Lagoona_1921.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Сайт туристической компании</h3>
+                <p class="works__description">Это мой первый сайт по&nbsp;вёрстке. Я&nbsp;использовал адаптивную вёрстку
+                  карточек с
+                  помощью свойства flex. Для интуитивно понятного восприятия кнопок и&nbsp;ссылок применил
+                  псевдоэлементы
+                  focus, hover, active. Изображения в&nbsp;карточках сделал фоном с&nbsp;помощью отдельных селекторов
+                  в&nbsp;CSS. В
+                  разметке сайта использовал семантические теги. После изучения анимации подключил сторонюю библиотеку
+                  для
+                  демонстрации движения заголовка. Позже реализовал бургерное меню для экранов мобильных устройств.</p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Laguna/">
+                Перейти на сайт</a>
             </div>
           </li>
 
-          <!-- Сайт-портфолио фотографа -->
-          <!-- <li class="works__item">
-            <div class="works__image-wrap">
-              <img class="works__image" src="img/photographer.png" alt="миниатюра сайта">
+          <li class="works-list__item">
+            <div class="works">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/Blanchard.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Сайт художественной галереи Blanchard</h3>
+                <p class="works__description">По завершении курса веб-вёрстки я сделал дипломную работу. Здесь
+                  я&nbsp;применил
+                  технологию flex-box для удобного расположения элементов на&nbsp;веб-странице, также использовал
+                  медиа-запросы
+                  для&nbsp;адаптации сайта под различные экраны устройств. В&nbsp;разделе "Галерея" кастомизировал
+                  чек-боксы для&nbsp; фильтрации работ и&nbsp;настроил несколько источников для&nbsp;оптимизации
+                  загрузки
+                  изображения в&nbsp;необходимом
+                  фильтрации картин по&nbsp;жанрам.</p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Laguna/">
+                Перейти на сайт</a>
             </div>
-            <div class="works__description-wrap">
-              <h3 class="works__item-title">Сайт-портфолио фотографа</h3>
-              <p class="works__description"></p>
-              <a class="works__btn-link" target="_blank" href="https://oleg-solovev.github.io/photographer/">
-                <button class="btn works__item-btn">Перейти на сайт</button></a>
-            </div>
-          </li> -->
+          </li>
 
-          <li class="works__item">
-            <div class="works__image-wrap">
-              <img class="works__image" src="img/CRM-Clients-table.png" alt="миниатюра сайта">
+          <li class="works-list__item">
+            <div class="works">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/igra-v-pari.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Игра "найди парные карты"</h3>
+                <p class="works__description">На&nbsp;этом сайте контент формируется интерактивно с&nbsp;помощью функций
+                  в&nbsp;JS файле.
+                  В&nbsp;начале игры необходимо выбрать от&nbsp;1&nbsp;до&nbsp;10&nbsp;пар карточек. Открытие карточки
+                  происходит по&nbsp;клику: добавляется класс &laquo;open&raquo; в&nbsp;котором указан размер шрифта
+                  и&nbsp;красный фон.
+                  При совпадении значений двух открытых карт к&nbsp;ним добавляется ещё один класс &laquo;success&raquo;
+                  с&nbsp;зелёным фоном.
+                  А&nbsp;если значения не&nbsp;совпадают, класс &laquo;open&raquo; удаляется.
+                  Игра заканчивается если все карточки открыты или прошла 1&nbsp;минута на&nbsp;таймере обратного
+                  отсчёта.
+                </p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Laguna/">
+                Перейти на сайт</a>
             </div>
-            <div class="works__description-wrap">
-              <h3 class="works__item-title">CRM клиентская база</h3>
-              <p class="works__description">Это мой дипломный проект по&nbsp;завершению базового курса JavaScript.
-                В&nbsp;проекте реализована CRM-система управления клиентской базой. Мною была создана интерфейсная часть
-                проекта, которая взаимодействует с&nbsp;уже готовым локальным сервером и&nbsp;клиентской базой (папка
-                &laquo;crm-backend&raquo;, нужно запускать отдельно).
-                Для демонстрации работы сайта я&nbsp;изменил сохранение базы с&nbsp;локального сервера на&nbsp;хранилище
-                браузера LockalStorage.
-                CRM-система позволяет добавлять, изменять, сортировать и&nbsp;удалять пользователей из&nbsp;базы данных.
-                А&nbsp;также добавлять, редактировать и&nbsp;удалять контактные данные.
-              </p>
-              <a class="works__btn-link" target="_blank" href="https://oleg-solovev.github.io/CRM-Clients-table/">
-                <button class="btn works__item-btn">Перейти на сайт</button></a>
+          </li>
+
+          <li class="works-list__item">
+            <div class="works">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/CRM-Clients-table.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">CRM клиентская база</h3>
+                <p class="works__description">Это мой дипломный проект по&nbsp;завершению базового курса JavaScript.
+                  В&nbsp;проекте реализована CRM-система управления клиентской базой. Мною была создана интерфейсная
+                  часть
+                  проекта, которая взаимодействует с&nbsp;уже готовым локальным сервером и&nbsp;клиентской базой (папка
+                  &laquo;crm-backend&raquo;, нужно запускать отдельно).
+                  Для демонстрации работы сайта я&nbsp;изменил сохранение базы с&nbsp;локального сервера
+                  на&nbsp;хранилище
+                  браузера LockalStorage.
+                  CRM-система позволяет добавлять, изменять, сортировать и&nbsp;удалять пользователей из&nbsp;базы
+                  данных.
+                  А&nbsp;также добавлять, редактировать и&nbsp;удалять контактные данные.
+                </p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Laguna/">
+                Перейти на сайт</a>
             </div>
           </li>
         </ul>
@@ -184,8 +191,8 @@
     </section>
 
     <section class="certificates section-offset" id="certificates">
-      <div class="container certificates__container">
-        <h2 class="section-title works__title">Мои сертификаты</h2>
+      <div class="container">
+        <h2 class="section-title">Мои сертификаты</h2>
 
         <div class="gallery">
 
