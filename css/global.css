@@ -52,23 +52,20 @@ body {
   border-radius: 15px;
 }
 
-.section-offset {
+.global-section {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
 }
 
-.section-title {
+.global-section-title {
   margin: 0;
   margin-bottom: 30px;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
   color: var(--green-dark);
-  padding-left: 45px;
 }
 
 .visually-hidden {
@@ -84,20 +81,35 @@ body {
   clip-path: inset(100%);
 }
 
-@media (max-width: 640px) {
+.btn__up {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: fixed;
+  width: 10vh;
+}
 
-  .section-offset {
-    padding: 0;
-    padding-top: 10px;
-  }
+.btn__up svg circle,
+.btn__up svg path {
+  stroke: var(--green-dark);
+}
 
-  .section-title {
-    text-align: center;
-    padding-left: 0;
+
+
+
+@media (max-width: 800px) {
+
+  .global-section {
+    padding: 5px 0;
   }
 
   .container {
     padding: 20px;
     justify-content: center;
+  }
+
+  .global-section-title {
+    margin-bottom: 10px;
+    font-size: 24px;
   }
 }
