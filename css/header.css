@@ -49,10 +49,6 @@
     transform: translateY(10px);
 }
 
-.header.open .header__burger-btn span {
-    background-color: white;
-}
-
 .header.open .header__burger-btn span:nth-child(1) {
     transform: translateY(0) rotate(45deg);
 }
@@ -87,6 +83,7 @@
         left: -250px;
         top: 0;
         width: 250px;
+        border-radius: 0 10px 10px 0;
         background-color: var(--green);
         padding: 75px 20px 20px 20px;
         transition: transform .5s;
