@@ -3,7 +3,7 @@
 .about-me__wrap {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
 }
 
 .about-me__description {
@@ -18,6 +18,7 @@
     font-size: 16px;
     line-height: 200%;
     text-indent: 2em;
+    text-align: justify;
 }
 
 .about-me__foto {
