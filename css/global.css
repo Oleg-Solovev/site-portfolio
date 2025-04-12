@@ -36,8 +36,15 @@ body {
   min-width: 320px;
   font-family: "Exo-2", "Arial", sans-serif;
   font-weight: 400;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   background-color: var(--green-light);
+  background-image: url(/img/body-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  margin-top: 75px;
 }
 
 .list-reset {

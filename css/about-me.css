@@ -1,9 +1,8 @@
-/* about-me */
-
 .about-me__wrap {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .about-me__description {
@@ -19,6 +18,33 @@
     line-height: 200%;
     text-indent: 2em;
     text-align: justify;
+}
+
+.about-me__steak-text {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-me__steak-list {
+    display: flex;
+    align-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.about-me__steak-item {
+    display: flex;
+    align-content: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background-color: var(--green);
+    border: 1px solid var(--green-dark);
+    border-radius: 5px;
+}
+
+.about-me__steak-item--git svg path {
+    stroke: var(--green-dark);
 }
 
 .about-me__foto {
