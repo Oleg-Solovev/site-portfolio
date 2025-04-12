@@ -1,3 +1,11 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #b4debe;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -11,7 +19,7 @@
     display: none;
     margin: 0;
     text-align: center;
-    color: var(--green-dark);
+    color: #045404;
     font-size: 22px;
 }
 
@@ -34,7 +42,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: var(--green-dark);
+    background-color: #045404;
     left: 5px;
     transition: transform .5s ease-in-out,
         opacity .5s ease-in-out,
@@ -84,7 +92,7 @@
         top: 0;
         width: 250px;
         border-radius: 0 10px 10px 0;
-        background-color: var(--green);
+        background-color: #b4debe;
         padding: 75px 20px 20px 20px;
         transition: transform .5s;
         z-index: 10;
