@@ -38,7 +38,7 @@
     align-content: center;
     gap: 5px;
     padding: 5px 10px;
-    background-color: var(--green);
+    background-color: var(--green-light);
     border: 1px solid var(--green-dark);
     border-radius: 5px;
 }
