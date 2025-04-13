@@ -1,10 +1,9 @@
-/* works */
-
 .works__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 30px;
+    margin-bottom: 20px;
 }
 
 .works__item-wrap {
@@ -14,7 +13,7 @@
     height: 100%;
     min-height: 400px;
     padding: 20px;
-    background-color: var(--green);
+    background-color: #fff;
     border-radius: 15px;
     position: relative;
 }
@@ -59,7 +58,6 @@
     text-align: center;
     text-decoration: none;
     color: #fff;
-    width: 170px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--purpure);
@@ -78,6 +76,11 @@
 .works__link:active {
     background-color: var(--purpure-dark);
     outline: none;
+}
+
+.works__link--works {
+    max-width: 250px;
+    margin: auto;
 }
 
 

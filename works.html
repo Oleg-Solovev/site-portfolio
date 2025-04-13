@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <link type="image/x-icon" href="img/logo.png" rel="icon">
+  <title>Олег Соловьёв - frontend-разработчик</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <button class="header__burger-btn" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header__title-wrap">
+        <h1 class="header__title">Олег Соловьёв - frontend-разработчик</h1>
+      </div>
+      <a href="https://oleg-solovev.github.io/site-portfolio/" class="header__logo-link">
+        <img class="header__logo-img" width="50" height="50" src="img/logo.png" alt="логотип сайта СОВ">
+      </a>
+      <nav class="nav header__nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="https://oleg-solovev.github.io/site-portfolio/#about-me" class="link nav__link hvr-underline-from-center">
+              <b>Обо&nbsp;мне</b>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="https://oleg-solovev.github.io/site-portfolio/#works" class="link nav__link hvr-underline-from-center">
+              <b>Мои&nbsp;работы</b>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="https://oleg-solovev.github.io/site-portfolio/#certificates" class="link nav__link hvr-underline-from-center">
+              <b>Мои&nbsp;сертификаты</b>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="https://oleg-solovev.github.io/site-portfolio/#contacts" class="link nav__link hvr-underline-from-center">
+              <b>Мои&nbsp;контакты</b>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="works global-section" id="works">
+      <div class="container">
+        <h2 class="global-section-title">Мои работы</h2>
+        <ul class="works__list list-reset">
+
+          <li class="works__item">
+            <div class="works__item-wrap">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/Travel-agency.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Сайт туристической компании</h3>
+                <p class="works__description">Проект состоит из трёх страниц: "Популярные туры", "Безопасность" и
+                  "Галерея". В вёрстке сайта я применил технологии Flexbox и&nbsp;Grid.
+                  Это позволяет сайту легко адаптироваться под любые размеры экраны устройств.
+                  Стили&nbsp;CSS разложены на отдельные компоненты для удобства дальнейшей масштабируемости сайта.</p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Travel-agency/">
+                Перейти на сайт</a>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="works__item-wrap">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/Blanchard.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Сайт художественной галереи Blanchard</h3>
+                <p class="works__description">Это одностраничный сайт в котором я кастомизировал
+                  чек-боксы для&nbsp;фильтрации картин по&nbsp;жанрам.
+                  А в разделе "Каталог" настроил несколько медиазапросов, используя тег &lt;source&gt;
+                  для&nbsp;оптимизации
+                  загрузки изображений в&nbsp;необходимом разрешении.</p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Blanchard/">
+                Перейти на сайт</a>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="works__item-wrap">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/igra-v-pari.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Игра "найди парные карты"</h3>
+                <p class="works__description">На&nbsp;этом сайте контент формируется интерактивно с&nbsp;помощью функций
+                  в&nbsp;JS файле.
+                  В&nbsp;начале игры необходимо выбрать от&nbsp;1&nbsp;до&nbsp;10&nbsp;пар карточек. Открытие карточки
+                  происходит по&nbsp;клику: добавляется класс &laquo;open&raquo; в&nbsp;котором указан размер шрифта
+                  и&nbsp;красный фон.
+                  При совпадении значений двух открытых карт к&nbsp;ним добавляется ещё один класс &laquo;success&raquo;
+                  с&nbsp;зелёным фоном.
+                  А&nbsp;если значения не&nbsp;совпадают, класс &laquo;open&raquo; удаляется.
+                  Игра заканчивается если все карточки открыты или прошла 1&nbsp;минута на&nbsp;таймере обратного
+                  отсчёта.
+                </p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/A-game-of-paired-cards/">
+                Перейти на сайт</a>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="works__item-wrap">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/CRM-Clients-table.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">CRM клиентская база</h3>
+                <p class="works__description">Это CRM-система управления клиентской базой в&nbsp;которой реализованы
+                  функции добавления, изменения и&nbsp;удаления клиентов из&nbsp;браузерного хранилища
+                  данных "LockalStorage". Взаимодействие с&nbsp;интерфейсом осуществляется с&nbsp;помощью модальных
+                  окон.
+                  В&nbsp;карточке пользователя можно добавлять, редактировать и&nbsp;удалять контактные данные.
+                  В&nbsp;таблице клиентов есть возможность сортировать данные по&nbsp;колонкам.
+                  После каждого изменения происходит рендеринг таблицы клиентов. Для оптимизации кода и работы
+                  с&nbsp;DOM элементами я использовал библиотеку jQuery.
+                </p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/CRM-Clients-table/">
+                Перейти на сайт</a>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="works__item-wrap">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/movie-catalog.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Сайт-каталог фильмов</h3>
+                <p class="works__description">Каталог фильмов с&nbsp;формой добавления, функциями сортировки
+                  и&nbsp;удаления. Реализовано взаимодействие с&nbsp;базой данных на&nbsp;удалённом сервере.</p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Travel-agency/">
+                Перейти на сайт</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__container">
+      <a href="tel:+79654249772" class="social-link" aria-label="Мой телефон" target="_blank">
+        <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15 3C16.5315 3.17014 17.9097 3.91107 19 5C20.0903 6.08893 20.8279 7.46869 21 9M14.5 6.5C15.2372 6.64382 15.9689 6.96892 16.5 7.5C17.0311 8.03108 17.3562 8.76284 17.5 9.5M8.20049 15.799C1.3025 8.90022 2.28338 5.74115 3.01055 4.72316C3.10396 4.55862 5.40647 1.11188 7.87459 3.13407C14.0008 8.17945 6.5 8 11.3894 12.6113C16.2788 17.2226 15.8214 9.99995 20.8659 16.1249C22.8882 18.594 19.4413 20.8964 19.2778 20.9888C18.2598 21.717 15.0995 22.6978 8.20049 15.799Z"
+            stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="https://t.me/Oleg7266" class="social-link" aria-label="Мой телеграм" target="_blank">
+        <svg width="50px" height="50px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3"
+          stroke="none" fill="none">
+          <path
+            d="M26.67,38.57l-.82,11.54A2.88,2.88,0,0,0,28.14,49l5.5-5.26,11.42,8.35c2.08,1.17,3.55.56,4.12-1.92l7.49-35.12h0c.66-3.09-1.08-4.33-3.16-3.55l-44,16.85C6.47,29.55,6.54,31.23,9,32l11.26,3.5L45.59,20.71c1.23-.83,2.36-.37,1.44.44Z"
+            stroke-linecap="round" />
+        </svg>
+      </a>
+      <a href="https://github.com/Oleg-Solovev" class="social-link" aria-label="Мой профиль в GitHub" target="_blank">
+        <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z"
+            stroke="none" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="https://vk.com/id2003039" class="social-link social-link-VK" aria-label="соцсеть вконтакте"
+        target="_blank">
+        <svg fill="none" width="50px" height="50px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3 248c0-38 26-53 58-55l149 1c9 0 17 6 20 15 34 110 76 178 126 255 3 6 8 9 13 9 4 0 8-2 11-7l3-11 1-173c0-25-12-29-40-33-11-2-18-12-18-22 0-2 0-4 1-6 14-43 58-65 120-65l56-1c46 0 88 20 88 79v227c4 3 8 5 13 5 8 0 18-5 26-18 52-73 111-160 119-206 0-2 1-3 2-5 11-22 39-37 51-41 2-1 5-2 9-2h155l10 1c15 0 26 10 31 19 9 14 7 29 8 35v7c-15 91-119 193-163 259-6 8-9 15-9 22 0 6 3 12 8 18l146 184c8 11 12 24 12 35 0 33-31 52-61 55l-17 1H779c-3 0-5 1-8 1-17 0-31-9-41-19-32-39-63-79-94-118-6-8-8-9-14-13-7 29-13 59-20 89l-3 17c-5 18-18 37-42 42l-14 1h-98C272 830 117 584 8 277c-3-8-5-19-5-29zm601 259c-26 0-55-15-55-43V234c0-27-12-37-45-37l-57 2c-32 0-50 5-65 15 23 11 44 26 44 68v176c-3 35-32 58-60 58-19 0-36-11-46-29-45-68-83-132-116-224l-9-26-133-1c-18 0-16 1-16 10 0 6 1 14 2 19l21 56c109 282 246 467 376 467h100c14 0 13-17 16-27l19-88c4-9 7-17 14-24 8-8 17-11 26-11 19 0 37 15 49 29l85 108c7 11 13 13 17 13h165c16 0 30-5 30-15 0-3-1-7-3-10L818 582c-12-15-17-30-17-45 0-16 6-32 16-46 42-63 132-153 153-227l3-13c-1-5-1-9-2-14H814c-10 4-18 10-24 18l-6 19c-23 64-86 152-131 213-15 14-32 20-49 20z" />
+        </svg>
+      </a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

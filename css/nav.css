@@ -1,12 +1,3 @@
-:root {
-    --green-light: #f0fcf3;
-    --green: #b4debe;
-    --green-dark: #045404;
-    --purpure-light: #e595c0;
-    --purpure: #c25991;
-    --purpure-dark: #8f225c;
-  }
-
 .nav__list {
     display: flex;
     justify-content: space-between;

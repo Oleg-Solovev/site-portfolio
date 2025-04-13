@@ -24,9 +24,12 @@ svg {
 }
 
 :root {
-  --green-light: #f0fcf3;
-  --green: #b4debe;
-  --green-dark: #045404;
+  /* --green-light: #f0fcf3; */
+  --green-light: #77C740;
+  /* --green: #b4debe; */
+  --green: #4FAD33;
+  --green-dark: #187E2B;
+  /* --green-dark: #045404; */
   --purpure-light: #e595c0;
   --purpure: #c25991;
   --purpure-dark: #8f225c;
@@ -38,7 +41,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.06em;
   background-color: var(--green-light);
-  background-image: url(/img/body-background.jpg);
+  background-image: url(../img/body-background.png);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -56,13 +59,13 @@ body {
 .container {
   min-height: 70px;
   padding: 30px;
-  background-color: #fff;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
 }
 
 .global-section {
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
   padding: 25px 0;
 }
