@@ -27,6 +27,7 @@
     margin-right: auto;
 }
 
+/* кнопка бургер-меню */
 .header__burger-btn {
     display: none;
     position: relative;
