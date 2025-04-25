@@ -30,14 +30,15 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .works__description {
     font-size: 16px;
     line-height: 20px;
     text-align: justify;
-    margin: 0 0 20px;
     text-indent: 2em;
+    margin: 0;
 }
 
 .works__image-wrap {

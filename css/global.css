@@ -110,10 +110,6 @@ body {
 
 @media (max-width: 800px) {
 
-  .global-section {
-    padding: 5px 0;
-  }
-
   .container {
     padding: 20px;
     justify-content: center;

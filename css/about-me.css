@@ -35,16 +35,12 @@
 
 .about-me__steak-item {
     display: flex;
-    align-content: center;
+    align-items: center;
     gap: 5px;
     padding: 5px 10px;
     background-color: var(--green-light);
     border: 1px solid var(--green-dark);
     border-radius: 5px;
-}
-
-.about-me__steak-item--git svg path {
-    stroke: var(--green-dark);
 }
 
 .about-me__foto {

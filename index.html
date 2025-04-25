@@ -12,6 +12,7 @@
   <!-- Библиотека для просмотра изображений галереи -->
   <!-- <script defer src="js/fslightbox.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js" defer></script>
   <script defer src="js/main.js"></script>
 
 
@@ -23,11 +24,11 @@
 
   <header class="header">
     <div class="header__container">
-      <button class="header__burger-btn" id="burger">
+      <button class="header__burger-btn" id="burger" aria-label="Кнопка открытия меню">
         <span></span><span></span><span></span>
       </button>
       <div class="header__title-wrap">
-        <h1 class="header__title">Олег Соловьёв - frontend-разработчик</h1>
+        <h1 class="header__title">Олег Соловьёв - фронтенд-разработчик</h1>
       </div>
       <a href="https://oleg-solovev.github.io/site-portfolio/" class="header__logo-link">
         <img class="header__logo-img" width="50" height="50" src="img/logo.png" alt="логотип сайта СОВ">
@@ -41,17 +42,17 @@
           </li>
           <li class="nav__item">
             <a href="#works" class="link nav__link hvr-underline-from-center">
-              <b>Мои&nbsp;работы</b>
+              <b>Проекты</b>
             </a>
           </li>
           <li class="nav__item">
             <a href="#certificates" class="link nav__link hvr-underline-from-center">
-              <b>Мои&nbsp;сертификаты</b>
+              <b>Сертификаты</b>
             </a>
           </li>
           <li class="nav__item">
             <a href="#contacts" class="link nav__link hvr-underline-from-center">
-              <b>Мои&nbsp;контакты</b>
+              <b>Контакты</b>
             </a>
           </li>
         </ul>
@@ -66,18 +67,16 @@
         <h2 class="global-section-title">Обо мне</h2>
         <div class="about-me__wrap">
           <div class="about-me__description">
-            <p class="about-me__text">Привет, меня зовут Олег! Я&nbsp;-&nbsp;frontend-разработчик сайтов.
-              Закончил курсы по&nbsp;вёрстке и&nbsp;Java Script в&nbsp;онлайн-школе Skillbox.
-              В&nbsp;ближайших планах изучить Type Script и фреймворк Vue.js. Для меня очень важен профессиональный
-              рост и развитие.
-            </p>
+            <p class="about-me__text">Привет, меня зовут Олег! Я&nbsp;-&nbsp;фронтенд-разработчик сайтов.</p>
             <p class="about-me__text">В&nbsp;своих работах я&nbsp;использую современные технологии адаптивной вёрстки:
-              Flexbox, Grid, BEM.</p>
+              Flexbox, Grid, BEM. Для оптимизации кода применяю препроцессор SASS и библиотеку jQuery.</p>
             <p class="about-me__text">
               С&nbsp;интересом читаю статьи на&nbsp;Хабре и смотрю видео о&nbsp;новых технологиях
-              по&nbsp;frontend-разработке и&nbsp;не&nbsp;только.</p>
+              по&nbsp;фронтенд-разработке и&nbsp;не&nbsp;только. Для меня очень важен профессиональный рост и развитие.
+            </p>
             <p class="about-me__text">
-              На&nbsp;досуге я катаюсь на&nbsp;велосипеде, лыжах и коньках, хожу в&nbsp;бассейн, играю с&nbsp;друзьями
+              На&nbsp;досуге я катаюсь на&nbsp;велосипеде, зимой - на&nbsp;лыжах и&nbsp;коньках, хожу в&nbsp;бассейн,
+              играю с&nbsp;друзьями
               в&nbsp;настольные
               игры, люблю активный отдых на&nbsp;природе.</p>
           </div>
@@ -88,79 +87,29 @@
           <p class="about-me__steak-text"><b>Стек, который я использую:</b></p>
           <ul class="about-me__steak-list list-reset">
             <li class="about-me__steak-item">
-              <svg width="20" xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" role="img" viewBox="0 0 512 512">
-                <path fill="#e34f26" d="M71 460L30 0h451l-41 460-185 52" />
-                <path fill="#ef652a" d="M256 472l149-41 35-394H256" />
-                <path fill="#ebebeb" d="M256 208h-75l-5-58h80V94H114l15 171h127zm-1 147l-63-17-4-45h-56l7 89 116 32z" />
-                <path fill="#fff" d="M255 208v57h70l-7 73-63 17v59l116-32 16-174zm0-114v56h137l5-56z" />
-              </svg>
+              <img width="30px" src="img/stack/figma.svg">
+              <span>Figma</span>
+            </li>
+            <li class="about-me__steak-item">
+              <img width="30px" src="img/stack/html.svg">
               <span>HTML</span>
             </li>
             <li class="about-me__steak-item">
-              <svg width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <polygon style="fill:#2196F3;" points="32,0 72.8,460.8 256,512 439.136,460.832 480,0 " />
-                <polygon style="fill:#FAFAFA;"
-                  points="392.768,150.688 387.616,208.576 372.064,382.112 256,414.208 255.904,414.24 
-	139.904,382.112 131.808,291.36 188.64,291.36 192.864,338.432 255.936,355.456 255.968,355.424 319.136,338.4 327.744,259.968 
-	129.088,260.512 123.456,206.88 332.512,204.416 336.736,147.008 117.856,147.616 114.176,94.208 256,94.208 397.824,94.208 " />
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-              </svg>
+              <img width="30px" src="img/stack/css.svg">
               <span>CSS</span>
             </li>
             <li class="about-me__steak-item">
-              <svg width="20" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                  <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
-                  <path
-                    d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026"
-                    fill="#000000"></path>
-                  <path
-                    d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413"
-                    fill="#000000"></path>
-                </g>
-              </svg>
+              <img width="30px" src="img/stack/js.svg">
               <span>JavaScript</span>
             </li>
             <li class="about-me__steak-item"><span>jQuery</span></li>
-            <li class="about-me__steak-item about-me__steak-item--git">
-              <svg width="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z"
-                  stroke-linejoin="round" />
-              </svg>
+            <li class="about-me__steak-item">
+              <img width="30px" src="img/stack/git.svg">
               <span>Git</span>
+            </li>
+            <li class="about-me__steak-item">
+              <img width="30px" src="img/stack/sass.svg">
+              <span>SASS SCSS</span>
             </li>
           </ul>
         </div>
@@ -170,7 +119,7 @@
 
     <section class="works global-section" id="works">
       <div class="container">
-        <h2 class="global-section-title">Мои работы</h2>
+        <h2 class="global-section-title">Проекты</h2>
         <ul class="works__list list-reset">
 
           <li class="works__item">
@@ -183,27 +132,10 @@
                 <p class="works__description">Проект состоит из трёх страниц: "Популярные туры", "Безопасность" и
                   "Галерея". В вёрстке сайта я применил технологии Flexbox и&nbsp;Grid.
                   Это позволяет сайту легко адаптироваться под любые размеры экраны устройств.
-                  Стили&nbsp;CSS разложены на отдельные компоненты для удобства дальнейшей масштабируемости сайта.</p>
+                  Стили&nbsp;CSS скомпилированы в один файл из отдельных компонентов (scss файлов) для удобства
+                  дальнейшей масштабируемости сайта.</p>
               </div>
               <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Travel-agency/">
-                Перейти на сайт</a>
-            </div>
-          </li>
-
-          <li class="works__item">
-            <div class="works__item-wrap">
-              <div class="works__image-wrap">
-                <img class="works__image" src="img/Blanchard.png" alt="миниатюра сайта">
-              </div>
-              <div class="works__description-wrap">
-                <h3 class="works__item-title">Сайт художественной галереи Blanchard</h3>
-                <p class="works__description">Это одностраничный сайт в котором я кастомизировал
-                  чек-боксы для&nbsp;фильтрации картин по&nbsp;жанрам.
-                  А в разделе "Каталог" настроил несколько медиазапросов, используя тег &lt;source&gt;
-                  для&nbsp;оптимизации
-                  загрузки изображений в&nbsp;необходимом разрешении.</p>
-              </div>
-              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Blanchard/">
                 Перейти на сайт</a>
             </div>
           </li>
@@ -215,12 +147,13 @@
               </div>
               <div class="works__description-wrap">
                 <h3 class="works__item-title">CRM клиентская база</h3>
-                <p class="works__description">Это CRM-система управления клиентской базой в&nbsp;которой реализованы
+                <p class="works__description">Система управления клиентской базой в&nbsp;которой реализованы
                   функции добавления, изменения и&nbsp;удаления клиентов из&nbsp;браузерного хранилища
-                  данных "LockalStorage". Взаимодействие с&nbsp;интерфейсом осуществляется с&nbsp;помощью модальных
-                  окон.
-                  В&nbsp;карточке пользователя можно добавлять, редактировать и&nbsp;удалять контактные данные.
-                  В&nbsp;таблице клиентов есть возможность сортировать данные по&nbsp;колонкам.
+                  данных "LockalStorage". Взаимодействие с&nbsp;базой осуществляется с&nbsp;помощью модальных
+                  окон.</p>
+                <p class="works__description">В&nbsp;карточке пользователя можно добавлять, редактировать и&nbsp;удалять
+                  контактные данные.
+                  В&nbsp;таблице клиентов есть возможность сортировки данных по&nbsp;колонкам.
                   После каждого изменения происходит рендеринг таблицы клиентов. Для оптимизации кода и работы
                   с&nbsp;DOM элементами я использовал библиотеку jQuery.
                 </p>
@@ -238,9 +171,27 @@
               <div class="works__description-wrap">
                 <h3 class="works__item-title">Сайт-каталог фильмов</h3>
                 <p class="works__description">Каталог фильмов с&nbsp;формой добавления, функциями сортировки
-                  и&nbsp;удаления. Реализовано взаимодействие с&nbsp;базой данных на&nbsp;удалённом сервере.</p>
+                  и&nbsp;удаления. Реализовано взаимодействие с&nbsp;базой данных на&nbsp;удалённом сервере с&nbsp;помощью запросов fetch.</p>
               </div>
               <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/movie-catalog/">
+                Перейти на сайт</a>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="works__item-wrap">
+              <div class="works__image-wrap">
+                <img class="works__image" src="img/Blanchard.png" alt="миниатюра сайта">
+              </div>
+              <div class="works__description-wrap">
+                <h3 class="works__item-title">Сайт художественной галереи Blanchard</h3>
+                <p class="works__description">Одностраничный сайт в котором я кастомизировал
+                  чек-боксы для&nbsp;фильтрации картин по&nbsp;жанрам.
+                  А в разделе "Каталог" настроил несколько медиазапросов, используя тег &lt;source&gt;
+                  для&nbsp;оптимизации
+                  загрузки изображений в&nbsp;необходимом разрешении.</p>
+              </div>
+              <a class="works__link" target="_blank" href="https://oleg-solovev.github.io/Blanchard/">
                 Перейти на сайт</a>
             </div>
           </li>
@@ -254,7 +205,7 @@
 
     <section class="certificates global-section" id="certificates">
       <div class="container">
-        <h2 class="global-section-title">Мои сертификаты</h2>
+        <h2 class="global-section-title">Сертификаты</h2>
 
         <div class="gallery">
 
@@ -264,17 +215,20 @@
               <div class="swiper-slide">
                 <a href="img/sertificat-1.png" data-fslightbox="gallery" class="gallery__link"
                   aria-label="Посмотреть подробнее">
-                  <img src="img/sertificat-1-size-520.png" loading="lazy" alt="Сертификат по вёрстке" class="gallery__image"></a>
+                  <img src="img/sertificat-1-size-520.png" loading="lazy" alt="Сертификат по вёрстке"
+                    class="gallery__image"></a>
               </div>
               <div class="swiper-slide">
                 <a href="img/sertificat-2.png" data-fslightbox="gallery" class="gallery__link"
                   aria-label="Посмотреть подробнее">
-                  <img src="img/sertificat-2-size-520.png" loading="lazy" alt="Сертификат по JS" class="gallery__image"></a>
+                  <img src="img/sertificat-2-size-520.png" loading="lazy" alt="Сертификат по JS"
+                    class="gallery__image"></a>
               </div>
               <div class="swiper-slide">
                 <a href="img/sertificat-3.png" data-fslightbox="gallery" class="gallery__link"
                   aria-label="Посмотреть подробнее">
-                  <img src="img/sertificat-3-size-520.png" loading="lazy" alt="Сертификат по HTML" class="gallery__image"></a>
+                  <img src="img/sertificat-3-size-520.png" loading="lazy" alt="Сертификат по HTML"
+                    class="gallery__image"></a>
               </div>
             </div>
           </div>
