@@ -21,8 +21,8 @@
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: var(--green-dark);
-    height: 2px;
+    background: darken($green, 10%);
+    height: 3px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
     -webkit-transition-duration: 0.3s;
@@ -39,7 +39,8 @@
 }
 
 .nav__link {
-    color: var(--green-dark);
+    font-size: 18px;
+    color: darken($green, 10%);
 }
 
 .link {
@@ -48,11 +49,11 @@
 }
 
 .link:focus-visible {
-    color: var(--green);
+    color: $green;
 }
 
 .link:active {
-    color: var(--green);
+    color: $green;
 }
 
 @media (max-width: 640px) {

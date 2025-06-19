@@ -38,8 +38,8 @@
     align-items: center;
     gap: 5px;
     padding: 5px 10px;
-    background-color: var(--green-light);
-    border: 1px solid var(--green-dark);
+    background-color: lighten($green, 20%);
+    border: 1px solid darken($green, 10%);
     border-radius: 5px;
 }
 

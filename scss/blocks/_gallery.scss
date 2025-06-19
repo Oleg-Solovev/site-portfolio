@@ -46,20 +46,20 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    fill: var(--green-dark);
+    fill: darken($green, 10%);
     transition: fill .3s ease-in-out;
 }
 
 .gallery__btn:focus-visible {
-    outline: 2px dashed var(--green);
+    outline: 2px dashed $green;
 }
 
 .gallery__btn:hover svg {
-    fill: var(--green);
+    fill: $green;
 }
 
 .gallery__btn:active svg {
-    fill: var(--purpure-light);
+    fill: lighten($purpure, 10%);
 }
 
 .swiper-button-disabled {
