@@ -23,24 +23,16 @@ svg {
   height: auto;
 }
 
-:root {
-  /* --green-light: #f0fcf3; */
-  --green-light: #77C740;
-  /* --green: #b4debe; */
-  --green: #4FAD33;
-  --green-dark: #187E2B;
-  /* --green-dark: #045404; */
-  --purpure-light: #e595c0;
-  --purpure: #c25991;
-  --purpure-dark: #8f225c;
-}
+// Переменные
+  $green: #4FAD33;
+  $purpure: #c25991;
 
 body {
   min-width: 320px;
-  font-family: "Exo-2", "Arial", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   font-weight: 400;
   letter-spacing: 0.06em;
-  background-color: var(--green-light);
+  background-color: lighten($green, 10%);
   background-image: url(../img/body-background.png);
   background-size: cover;
   background-attachment: fixed;
@@ -57,7 +49,6 @@ body {
 }
 
 .container {
-  min-height: 70px;
   padding: 30px;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.3);
@@ -76,7 +67,7 @@ body {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  color: var(--green-dark);
+  color: darken($green, 90%);
 }
 
 .visually-hidden {
@@ -102,10 +93,8 @@ body {
 
 .btn__up svg circle,
 .btn__up svg path {
-  stroke: var(--green-dark);
+  stroke: darken($green, 10%);
 }
-
-
 
 
 @media (max-width: 800px) {

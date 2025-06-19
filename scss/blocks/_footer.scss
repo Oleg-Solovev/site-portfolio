@@ -1,7 +1,8 @@
 .footer {
     display: flex;
     justify-content: center;
-    background: linear-gradient(0deg, var(--green) 20%, #ffffff00 100%);
+    background: rgba(255, 255, 255, 0.3);
+    // background: linear-gradient(0deg, $green 20%, darken($green, 10%) 100%);
 }
 
 .footer__container {
@@ -15,35 +16,35 @@
 
 .social-link svg path,
 .social-link svg {
-    stroke: var(--green-dark);
+    stroke: darken($green, 10%);
     transition: stroke .3s ease-in-out;
 }
 
 .social-link-VK svg {
-    fill: var(--green-dark);
+    fill: darken($green, 10%);
     transition: fill .3s ease-in-out;
 }
 
 .social-link:focus-visible {
-    outline: 2px dashed var(--green-dark);
+    outline: 2px dashed darken($green, 10%);
 }
 
 .social-link:hover svg path,
 .social-link:hover svg {
-    stroke: var(--green-light);
+    stroke: lighten($green, 10%);
 }
 
 .social-link-VK:hover svg {
-    fill: var(--green-light);
+    fill: lighten($green, 10%);
 }
 
 .social-link:active svg path,
 .social-link:active svg {
-    stroke: var(--purpure);
+    stroke: $purpure;
 }
 
 .social-link-VK:active svg {
-    fill: var(--purpure);
+    fill: $purpure;
 }
 
 @media (max-width: 640px) {
